@@ -1,4 +1,4 @@
-class slavetrader {
+class slavemaker {
 
 	package {'puppet':
 		ensure => installed,
@@ -6,7 +6,7 @@ class slavetrader {
 	}
 
 	file {'/etc/puppet/puppet.conf':
-		content => template ("/etc/modules/slavetrader/templates/puppet.conf"),
+		content => template ("/etc/modules/slavemaker/templates/puppet.conf"),
 		notify => Service ['puppet'],
 	}
 
